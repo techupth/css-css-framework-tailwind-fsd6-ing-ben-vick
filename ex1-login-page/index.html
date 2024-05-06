@@ -13,14 +13,14 @@
       class="w-screen h-screen bg-slate-200 flex justify-center items-center"
     >
       <div class="bg-white flex flex-col p-6 gap-6 rounded-xl w-1/6">
-        <header class="text-xl">Login to Website</header>
+        <header class="text-xl text-zinc-600">Login to Website</header>
         <form class="flex flex-col gap-8">
           <div class="flex flex-row items-center relative">
             <label for="email" class="font-semibold">Email</label>
             <input
               type="email"
               id="email"
-              class="border-slate-200 border-2 rounded-md absolute right-0 h-10"
+              class="border-2 rounded-md absolute right-0 p-2 border-zinc-600 hover:border-violet-500 focus:border-violet-300 focus:outline-none"
             />
           </div>
           <div class="flex flex-row items-center relative">
@@ -28,14 +28,18 @@
             <input
               type="password"
               id="password"
-              class="border-slate-200 border-2 rounded-md absolute right-0 h-10"
+              class="border-2 rounded-md absolute right-0 p-2 border-zinc-600 hover:border-violet-500 focus:border-violet-300 focus:outline-none"
             />
           </div>
           <div class="flex flex-row justify-center gap-2">
-            <button class="text-white bg-purple-500 px-10 py-2 rounded-full">
+            <button
+              class="text-white bg-violet-500 w-36 p-2 rounded-full active:bg-violet-600 hover:bg-violet-400 focus:ring focus:ring-violet-300"
+            >
               Sign in
             </button>
-            <button class="text-purple-500 bg-white px-10 py-2 rounded-full">
+            <button
+              class="text-violet-600 bg-white w-36 p-2 rounded-full hover:bg-violet-100 focus:ring focus:ring-violet-300"
+            >
               Sign up
             </button>
           </div>
