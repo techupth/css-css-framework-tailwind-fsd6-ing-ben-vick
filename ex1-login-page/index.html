@@ -1,16 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Framework (Tailwind) Exercise 1</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CSS Framework (Tailwind) Exercise 1</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-</head>
-
-<body>
-  <!-- Start coding here -->
-</body>
-
+  <body>
+    <div
+      class="w-screen h-screen bg-slate-200 flex justify-center items-center"
+    >
+      <div class="bg-white flex flex-col p-6 gap-6 rounded-xl w-1/6">
+        <header class="text-xl">Login to Website</header>
+        <form class="flex flex-col gap-8">
+          <div class="flex flex-row items-center relative">
+            <label for="email" class="font-semibold">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="border-slate-200 border-2 rounded-md absolute right-0 h-10"
+            />
+          </div>
+          <div class="flex flex-row items-center relative">
+            <label for="password" class="font-semibold">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="border-slate-200 border-2 rounded-md absolute right-0 h-10"
+            />
+          </div>
+          <div class="flex flex-row justify-center gap-2">
+            <button class="text-white bg-purple-500 px-10 py-2 rounded-full">
+              Sign in
+            </button>
+            <button class="text-purple-500 bg-white px-10 py-2 rounded-full">
+              Sign up
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
